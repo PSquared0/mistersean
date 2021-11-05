@@ -1,0 +1,89 @@
+<div class="container">
+
+  <!-- intro -->
+  <div class="intro">
+    <!-- avatar image -->
+
+
+    <!-- info -->
+    <!-- <h1 class="mb-2 mt-0">Mr. Sean</h1> -->
+    <h1 style="margin-bottom: 0em !important" class="mb-2 mt-0"><span style="margin-bottom: 0em !important;font-size: 52px">Mr</span><span  style="color: #FFD15C;font-size: 52px">.       </span>
+<span style="margin-bottom: 0em !important; color: #FFD15C;font-size: 52px">Sean</span><span  style="font-size: 52px">. </span></h1>
+
+      <img src="assets/images/avatar-1.svg" alt="Bolby" class="mb-4" />
+    <span>
+      <span class="text-rotating morphext">
+        <span *ngIf="bounce === 1"><span @bounce>Thank you for bring a Friend</span></span>
+        <span *ngIf="bounce === 2"><span @bounce>Traveled down a road and back again</span></span>
+        <span *ngIf="bounce === 3"><span @bounce>Your heart is true, you're a pal and a confidant</span></span>
+      </span>
+    </span>
+
+    <!-- social icons -->
+    <ul class="social-icons light list-inline mb-0 mt-4">
+      <li class="list-inline-item"><a href="https://www.instagram.com/mrseansmusic/?hl=bg"><i class="fab fa-instagram"></i></a></li>
+      <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCJDHB1O2AdJ3n_Y26S2_NFQ?view_as=subscriber"><i class="fab fa-youtube"></i></a></li>
+      <li class="list-inline-item"><a href="javascript:"><i class="fab fa-facebook"></i></a></li>
+      <!-- <li class="list-inline-item"><a href="javascript:"><i class="fab fa-dribbble"></i></a></li>
+      <li class="list-inline-item"><a href="javascript:"><i class="fab fa-pinterest-p"></i></a></li> -->
+    </ul>
+    <!-- <audio controls><source src="https://youtu.be/x7Zat4QJj3s" type="video/mpeg">Your browser does not support the audio tag.</audio> -->
+
+    <!-- buttons -->
+    <!-- <div class="mt-4">
+      <a href="javascript:" class="btn btn-default" (click)="scrollTo('contact')">Hire me</a>
+    </div> -->
+  </div>
+
+  <!-- scroll down mouse wheel -->
+  <div class="scroll-down" [ngClass]="{'light': themeType === 'light'}">
+    <a href="javascript:" class="mouse-wrapper" (click)="scrollTo('about')">
+      <span>Scroll Down</span>
+      <span class="mouse">
+        <span class="wheel"></span>
+      </span>
+    </a>
+  </div>
+
+  <!-- parallax layers -->
+  <div id="scene" class="parallax" data-relative-input="true">
+    <!-- <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"/></svg> -->
+
+<svg data-depth="0.3" data-name="Layer 1" class="layer p1" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M27.68,24.57a6.15,6.15,0,0,1,2.39,0V7.81L12.29,12.92v19.5c0,.11,0,.22,0,.33h0c0,2.63-2.75,5.23-6.15,5.82S0,37.51,0,34.88s2.76-5.24,6.16-5.82a6.88,6.88,0,0,1,3.45.22v-24h.15L32.76,0V27.05a3.05,3.05,0,0,1,.06.6h0c0,2.19-2.3,4.37-5.14,4.86s-5.14-.89-5.14-3.09,2.3-4.37,5.14-4.86Z" fill="#FFD15C" /></svg>
+    <!-- <svg width="26" height="26" data-depth="0.2" class="layer p2 " xmlns="http://www.w3.org/2000/svg"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"/></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p2" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M33.67,20.68a7.63,7.63,0,1,0,6.71,4v-18a1.86,1.86,0,0,0-2.1-1.88l-19,2.06A2.1,2.1,0,0,0,17.47,9V28A7.62,7.62,0,1,0,20,33.58a7.41,7.41,0,0,0-.2-1.71h.07V9.23L38,7.25V22A7.55,7.55,0,0,0,33.67,20.68ZM12.33,38.85a5.27,5.27,0,1,1,5.27-5.27A5.27,5.27,0,0,1,12.33,38.85Zm21.34-5.27a5.27,5.27,0,1,1,5.26-5.26A5.27,5.27,0,0,1,33.67,33.58Z" fill="#FF4C60" /></svg>
+
+    <!-- <svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"/></svg> -->
+
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p3" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M118.7,52.59h-2V79.73A9.15,9.15,0,1,0,119,92.47a9,9,0,0,0,1.62-4.58h0V56.76a7.85,7.85,0,0,1,5.88,7.59h3.92A11.78,11.78,0,0,0,118.7,52.59Z" fill="#44D7B6" /></svg>
+
+    <!-- <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"/></svg> -->
+
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p4" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M27.68,24.57a6.15,6.15,0,0,1,2.39,0V7.81L12.29,12.92v19.5c0,.11,0,.22,0,.33h0c0,2.63-2.75,5.23-6.15,5.82S0,37.51,0,34.88s2.76-5.24,6.16-5.82a6.88,6.88,0,0,1,3.45.22v-24h.15L32.76,0V27.05a3.05,3.05,0,0,1,.06.6h0c0,2.19-2.3,4.37-5.14,4.86s-5.14-.89-5.14-3.09,2.3-4.37,5.14-4.86Z" fill="#FFD15C" transform="rotate(-3 9.86603 10.13397)"/></svg>
+
+    <!-- <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg> -->
+<svg data-depth="0.3" data-name="Layer 1" class="layer p5" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M118.7,52.59h-2V79.73A9.15,9.15,0,1,0,119,92.47a9,9,0,0,0,1.62-4.58h0V56.76a7.85,7.85,0,0,1,5.88,7.59h3.92A11.78,11.78,0,0,0,118.7,52.59Z" fill="#6C6CE5" /></svg>
+
+    <!-- <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"/><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"/></g></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p6" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M118.7,52.59h-2V79.73A9.15,9.15,0,1,0,119,92.47a9,9,0,0,0,1.62-4.58h0V56.76a7.85,7.85,0,0,1,5.88,7.59h3.92A11.78,11.78,0,0,0,118.7,52.59Z" fill="#FF4C60" /></svg>
+
+    <!-- <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"/></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p7" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M27.68,24.57a6.15,6.15,0,0,1,2.39,0V7.81L12.29,12.92v19.5c0,.11,0,.22,0,.33h0c0,2.63-2.75,5.23-6.15,5.82S0,37.51,0,34.88s2.76-5.24,6.16-5.82a6.88,6.88,0,0,1,3.45.22v-24h.15L32.76,0V27.05a3.05,3.05,0,0,1,.06.6h0c0,2.19-2.3,4.37-5.14,4.86s-5.14-.89-5.14-3.09,2.3-4.37,5.14-4.86Z" fill="#FFD15C" /></svg>
+
+    <!-- <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p8" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M33.67,20.68a7.63,7.63,0,1,0,6.71,4v-18a1.86,1.86,0,0,0-2.1-1.88l-19,2.06A2.1,2.1,0,0,0,17.47,9V28A7.62,7.62,0,1,0,20,33.58a7.41,7.41,0,0,0-.2-1.71h.07V9.23L38,7.25V22A7.55,7.55,0,0,0,33.67,20.68ZM12.33,38.85a5.27,5.27,0,1,1,5.27-5.27A5.27,5.27,0,0,1,12.33,38.85Zm21.34-5.27a5.27,5.27,0,1,1,5.26-5.26A5.27,5.27,0,0,1,33.67,33.58Z" fill="#6C6CE5" /></svg>
+
+    <!-- <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"/></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p8" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M33.67,20.68a7.63,7.63,0,1,0,6.71,4v-18a1.86,1.86,0,0,0-2.1-1.88l-19,2.06A2.1,2.1,0,0,0,17.47,9V28A7.62,7.62,0,1,0,20,33.58a7.41,7.41,0,0,0-.2-1.71h.07V9.23L38,7.25V22A7.55,7.55,0,0,0,33.67,20.68ZM12.33,38.85a5.27,5.27,0,1,1,5.27-5.27A5.27,5.27,0,0,1,12.33,38.85Zm21.34-5.27a5.27,5.27,0,1,1,5.26-5.26A5.27,5.27,0,0,1,33.67,33.58Z" fill="#6C6CE5" /></svg>
+
+    <!-- <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"/><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"/></g></svg>
+
+
+    <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"/></svg> -->
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p9" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M27.68,24.57a6.15,6.15,0,0,1,2.39,0V7.81L12.29,12.92v19.5c0,.11,0,.22,0,.33h0c0,2.63-2.75,5.23-6.15,5.82S0,37.51,0,34.88s2.76-5.24,6.16-5.82a6.88,6.88,0,0,1,3.45.22v-24h.15L32.76,0V27.05a3.05,3.05,0,0,1,.06.6h0c0,2.19-2.3,4.37-5.14,4.86s-5.14-.89-5.14-3.09,2.3-4.37,5.14-4.86Z" fill="#44D7B6" /></svg>
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p10" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M33.67,20.68a7.63,7.63,0,1,0,6.71,4v-18a1.86,1.86,0,0,0-2.1-1.88l-19,2.06A2.1,2.1,0,0,0,17.47,9V28A7.62,7.62,0,1,0,20,33.58a7.41,7.41,0,0,0-.2-1.71h.07V9.23L38,7.25V22A7.55,7.55,0,0,0,33.67,20.68ZM12.33,38.85a5.27,5.27,0,1,1,5.27-5.27A5.27,5.27,0,0,1,12.33,38.85Zm21.34-5.27a5.27,5.27,0,1,1,5.26-5.26A5.27,5.27,0,0,1,33.67,33.58Z" fill="#FF4C60" /></svg>
+    <svg data-depth="0.3" data-name="Layer 1" class="layer p11" xmlns="http://www.w3.org/2000/svg" ><defs></defs><path d="M27.68,24.57a6.15,6.15,0,0,1,2.39,0V7.81L12.29,12.92v19.5c0,.11,0,.22,0,.33h0c0,2.63-2.75,5.23-6.15,5.82S0,37.51,0,34.88s2.76-5.24,6.16-5.82a6.88,6.88,0,0,1,3.45.22v-24h.15L32.76,0V27.05a3.05,3.05,0,0,1,.06.6h0c0,2.19-2.3,4.37-5.14,4.86s-5.14-.89-5.14-3.09,2.3-4.37,5.14-4.86Z" fill="#FFD15C" transform="rotate(-3 9.86603 10.13397)"/></svg>
+
+  </div>
+
+</div>
